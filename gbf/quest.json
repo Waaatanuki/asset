@@ -224,16 +224,16 @@
     "targetItemKey": "10_215"
   },
   {
-    "quest_id": "305601",
-    "quest_name": "ティアマト・アウラマグナＨＬ",
+    "questId": "305601",
+    "questName": "ティアマト・アウラマグナＨＬ",
     "isBlueBox": true,
     "isBlueTreasure": false,
     "targetItemKey": "10_215"
   },
   {
 
-    "quest_id": "305591",
-    "quest_name": "シュヴァリエ・クレドマグナＨＬ",
+    "questId": "305591",
+    "questName": "シュヴァリエ・クレドマグナＨＬ",
     "isBlueBox": true,
     "isBlueTreasure": false,
     "targetItemKey": "10_215"
