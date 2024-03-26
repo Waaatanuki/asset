@@ -217,6 +217,13 @@
     "targetItemKey": "10_215"
   },
   {
+    "questId": "305581",
+    "questName": "ダーク・ラプチャー・ゼロ",
+    "isBlueBox": false,
+    "isBlueTreasure": false,
+    "targetItemKey": "10_215"
+  },
+  {
     "quest_id": "305601",
     "quest_name": "ティアマト・アウラマグナＨＬ",
     "isBlueBox": true,
