@@ -70,8 +70,8 @@
     "targetItemKey": "10_215"
   },
   {
-    "questId": "303241",
-    "questName": "ティアマト・マリスＨＬ",
+    "questId": "305481",
+    "questName": "レギオン・ヴォイドＨＬ",
     "isBlueBox": false,
     "isBlueTreasure": false,
     "targetItemKey": "10_215"
@@ -91,6 +91,13 @@
     "targetItemKey": "10_215"
   },
   {
+    "questId": "303241",
+    "questName": "ティアマト・マリスＨＬ",
+    "isBlueBox": false,
+    "isBlueTreasure": false,
+    "targetItemKey": "10_215"
+  },
+  {
     "questId": "305271",
     "questName": "シュヴァリエ・マリスＨＬ",
     "isBlueBox": false,
@@ -100,13 +107,6 @@
   {
     "questId": "305291",
     "questName": "アニマ・アニムス・コアＨＬ",
-    "isBlueBox": false,
-    "isBlueTreasure": false,
-    "targetItemKey": "10_215"
-  },
-  {
-    "questId": "305481",
-    "questName": "レギオン・ヴォイドＨＬ",
     "isBlueBox": false,
     "isBlueTreasure": false,
     "targetItemKey": "10_215"
@@ -196,6 +196,21 @@
     "targetItemKey": "10_215"
   },
   {
+    "questId": "305601",
+    "questName": "ティアマト・アウラマグナＨＬ",
+    "isBlueBox": true,
+    "isBlueTreasure": false,
+    "targetItemKey": "10_215"
+  },
+  {
+
+    "questId": "305591",
+    "questName": "シュヴァリエ・クレドマグナＨＬ",
+    "isBlueBox": true,
+    "isBlueTreasure": false,
+    "targetItemKey": "10_215"
+  },
+  {
     "questId": "305311",
     "questName": "神撃せし蒼き究極の竜",
     "isBlueBox": false,
@@ -220,21 +235,6 @@
     "questId": "305581",
     "questName": "ダーク・ラプチャー・ゼロ",
     "isBlueBox": false,
-    "isBlueTreasure": false,
-    "targetItemKey": "10_215"
-  },
-  {
-    "questId": "305601",
-    "questName": "ティアマト・アウラマグナＨＬ",
-    "isBlueBox": true,
-    "isBlueTreasure": false,
-    "targetItemKey": "10_215"
-  },
-  {
-
-    "questId": "305591",
-    "questName": "シュヴァリエ・クレドマグナＨＬ",
-    "isBlueBox": true,
     "isBlueTreasure": false,
     "targetItemKey": "10_215"
   }

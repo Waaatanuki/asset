@@ -11,6 +11,12 @@ devDependencies:
   '@types/node':
     specifier: ^20.11.14
     version: 20.11.14
+  dayjs:
+    specifier: ^1.11.10
+    version: 1.11.10
+  dotenv:
+    specifier: ^16.4.5
+    version: 16.4.5
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
@@ -747,6 +753,10 @@ packages:
     hasBin: true
     dev: true
 
+  /dayjs@1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+    dev: true
+
   /debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
     peerDependencies:
@@ -786,6 +796,11 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       esutils: 2.0.3
+    dev: true
+
+  /dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
     dev: true
 
   /electron-to-chromium@1.4.653:
