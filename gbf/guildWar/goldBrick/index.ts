@@ -82,7 +82,8 @@ import Quest from 'gbf/quest.json'
       hit?.data.push(_d)
     })
   }
-  fsPromises.writeFile('./gbf/guildWar/goldBrick/global.json', JSON.stringify(res))
+
+  fsPromises.writeFile('./gbf/guildWar/goldBrick/global.json', JSON.stringify({ updateTime: dayjs().format('YYYY-MM-DD HH:mm:ss'), date: res }))
 })()
 
 interface DropInfo {
