@@ -5,12 +5,12 @@ import Quest from 'gbf/quest.json'
 
 (async () => {
   const env = dotenv.config().parsed
-  const TARGET_ITEM_KEY = ['17_20004']
+  const TARGET_ITEM_KEY = ['10_215']
   if (!env) {
     console.log('请先添加环境变量')
     return
   }
-  const startDate = '2022-03-09'
+  const startDate = '2024-03-05'
   const endDate = dayjs().format('YYYY-MM-DD')
   const targetQuest = Quest.filter(q => TARGET_ITEM_KEY.includes(q.targetItemKey))
   const diffDays = dayjs(endDate).diff(startDate, 'day')
@@ -26,14 +26,9 @@ import Quest from 'gbf/quest.json'
     const dayData = targetQuest.map(q => ({
       questId: q.questId,
       date,
+      targetItemCount: 0,
       total: 0,
       blueChest: 0,
-      redChestFFJ: 0,
-      blueChestFFJ: 0,
-      normalChestFFJ: 0,
-      ring1: 0,
-      ring2: 0,
-      ring3: 0,
     }))
 
     const body = JSON.stringify({
@@ -59,18 +54,8 @@ import Quest from 'gbf/quest.json'
 
       hitQuest.total++
       dropInfo.reward.forEach((treasure) => {
-        if (TARGET_ITEM_KEY.includes(treasure.key)) {
-          treasure.box === '3' && hitQuest.normalChestFFJ++
-          treasure.box === '4' && hitQuest.redChestFFJ++
-          treasure.box === '11' && hitQuest.blueChestFFJ++
-        }
-
-        if (treasure.box === '11') {
-          hitQuest.blueChest++
-          treasure.key === '73_1' && hitQuest.ring1++
-          treasure.key === '73_2' && hitQuest.ring2++
-          treasure.key === '73_3' && hitQuest.ring3++
-        }
+        treasure.box === '11' && hitQuest.blueChest++
+        TARGET_ITEM_KEY.includes(treasure.key) && hitQuest.targetItemCount++
       })
     }
     console.log(`完成${date}统计`)
@@ -83,7 +68,7 @@ import Quest from 'gbf/quest.json'
     })
   }
 
-  fsPromises.writeFile('./gbf/drop/goldBrick/global.json', JSON.stringify({ updateTime: dayjs().format('YYYY-MM-DD HH:mm:ss'), date: res }))
+  fsPromises.writeFile('./gbf/drop/eternitySand/global.json', JSON.stringify({ updateTime: dayjs().format('YYYY-MM-DD HH:mm:ss'), date: res }))
 })()
 
 interface DropInfo {
@@ -110,13 +95,8 @@ interface GlobalData {
   targetItemKey: string
   data: {
     date: string
+    targetItemCount: number
     total: number
     blueChest: number
-    redChestFFJ: number
-    blueChestFFJ: number
-    normalChestFFJ: number
-    ring1: number
-    ring2: number
-    ring3: number
   }[]
 }
