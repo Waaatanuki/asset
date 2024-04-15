@@ -1,0 +1,70 @@
+{
+  "updateTime": "2024-04-15 17:12:38",
+  "data": [
+    {
+      "value": "teamraid072",
+      "title": "第72回古战场(光有利)",
+      "date": [
+        "2024-04-07",
+        "2024-04-14"
+      ],
+      "quest": [
+        {
+          "questId": "917861",
+          "questName": "90HELL",
+          "questImage": "teamraid072_hell90",
+          "questType": "1",
+          "isBlueBox": false,
+          "isBlueTreasure": false,
+          "targetItemCount": 1,
+          "total": 637,
+          "blueChest": 0
+        },
+        {
+          "questId": "917871",
+          "questName": "95HELL",
+          "questImage": "teamraid072_hell95",
+          "questType": "1",
+          "isBlueBox": false,
+          "isBlueTreasure": false,
+          "targetItemCount": 0,
+          "total": 193,
+          "blueChest": 0
+        },
+        {
+          "questId": "917881",
+          "questName": "100HELL",
+          "questImage": "teamraid072_hell100",
+          "questType": "1",
+          "isBlueBox": false,
+          "isBlueTreasure": false,
+          "targetItemCount": 0,
+          "total": 11,
+          "blueChest": 0
+        },
+        {
+          "questId": "917891",
+          "questName": "150HELL",
+          "questImage": "teamraid072_hell150",
+          "questType": "1",
+          "isBlueBox": false,
+          "isBlueTreasure": false,
+          "targetItemCount": 0,
+          "total": 2,
+          "blueChest": 0
+        },
+        {
+          "questId": "917901",
+          "questName": "200HELL",
+          "questImage": "teamraid072_hell200",
+          "questType": "1",
+          "isBlueBox": false,
+          "isBlueTreasure": false,
+          "targetItemCount": 2,
+          "total": 302,
+          "blueChest": 0
+        }
+      ]
+    }
+  ]
+}
