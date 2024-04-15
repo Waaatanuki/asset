@@ -68,7 +68,7 @@ import Quest from 'gbf/quest.json'
     })
   }
 
-  fsPromises.writeFile('./gbf/drop/eternitySand/global.json', JSON.stringify({ updateTime: dayjs().format('YYYY-MM-DD HH:mm:ss'), date: res }))
+  fsPromises.writeFile('./gbf/drop/eternitySand/global.json', JSON.stringify({ updateTime: dayjs().format('YYYY-MM-DD HH:mm:ss'), data: res }))
 })()
 
 interface DropInfo {
