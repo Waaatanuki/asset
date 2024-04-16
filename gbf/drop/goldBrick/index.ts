@@ -1,7 +1,6 @@
 import fsPromises from 'node:fs/promises'
 import dotenv from 'dotenv'
 import dayjs from 'dayjs'
-import Quest from 'gbf/quest.json'
 
 (async () => {
   const env = dotenv.config().parsed
@@ -10,6 +9,11 @@ import Quest from 'gbf/quest.json'
     console.log('请先添加环境变量')
     return
   }
+  const questResp = await fetch(`${env.BASE_ADMIN_API}/ext/quest`, {
+    method: 'get',
+  })
+  const { data: Quest }: { data: Quest[] } = await questResp.json()
+
   const startDate = '2022-03-09'
   const endDate = dayjs().format('YYYY-MM-DD')
   const targetQuest = Quest.filter(q => TARGET_ITEM_KEY.includes(q.targetItemKey))
@@ -41,7 +45,7 @@ import Quest from 'gbf/quest.json'
       dateRange: [date, date],
     })
 
-    const resp = await fetch(`${env.BASE_API}/gbf/reward/battle/search`, {
+    const resp = await fetch(`${env.BASE_RESOURCE_API}/gbf/reward/battle/search`, {
       headers: { 'Content-Type': 'application/json' },
       method: 'post',
       body,
@@ -119,4 +123,12 @@ interface GlobalData {
     ring2: number
     ring3: number
   }[]
+}
+
+interface Quest {
+  questId: string
+  questName: string
+  isBlueBox: boolean
+  isBlueTreasure: boolean
+  targetItemKey: string
 }

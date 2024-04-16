@@ -46,7 +46,7 @@ import { eventInfo } from './event';
       dateRange: [date, date],
     })
 
-    const resp = await fetch(`${env.BASE_API}/gbf/reward/battle/search`, {
+    const resp = await fetch(`${env.BASE_RESOURCE_API}/gbf/reward/battle/search`, {
       headers: { 'Content-Type': 'application/json' },
       method: 'post',
       body,
