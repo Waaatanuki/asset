@@ -29,7 +29,7 @@
       "treasure_type": "10"
     }
   },
-  "stone_num": "83047",
+  "stone_num": "89627",
   "gachaticket_popup": [],
   "enable_beginner_free_legend_10": false,
   "enable_free_legend_10": false,
@@ -41,7 +41,7 @@
   "legend": {
     "lineup": [
       {
-        "id": "207860",
+        "id": "207950",
         "name": "レジェンド10連ガチャ",
         "class_name": "prt-title-legend10",
         "bg_image1": "gacha_bg1",
@@ -51,7 +51,7 @@
         },
         "campaign_id": null,
         "campaign_news_id": null,
-        "start": "4月15日 19:00",
+        "start": "4月30日 12:00",
         "end": "12月31日 23:59",
         "image_path": "",
         "text_btn_image": "text_legend10",
@@ -75,12 +75,12 @@
           }
         ],
         "times": "10",
-        "service_start": "2024/4/15 19:00",
-        "service_end": "2024/4/18 18:59",
-        "disp_service_end": "4/18 18:59"
+        "service_start": "2024/4/30 12:00",
+        "service_end": "2024/5/3 18:59",
+        "disp_service_end": "5/3 18:59"
       },
       {
-        "id": "207861",
+        "id": "207951",
         "name": "レジェンドガチャ",
         "class_name": "prt-title-legend1",
         "bg_image1": "gacha_bg1",
@@ -93,7 +93,7 @@
         },
         "campaign_id": null,
         "campaign_news_id": null,
-        "start": "4月15日 19:00",
+        "start": "4月30日 12:00",
         "end": "12月31日 23:59",
         "image_path": "",
         "text_btn_image": "text_legend",
@@ -107,7 +107,7 @@
           {
             "ticket_id": 20011,
             "ticket_name": "レジェンドガチャチケット",
-            "ticket_num": 40,
+            "ticket_num": 50,
             "ticket_end_at": null,
             "text_btn_image_ticket": "text_legendticket",
             "type": null,
@@ -117,23 +117,23 @@
           }
         ],
         "times": "1",
-        "service_start": "2024/4/15 19:00",
-        "service_end": "2024/4/18 18:59",
-        "disp_service_end": "4/18 18:59"
+        "service_start": "2024/4/30 12:00",
+        "service_end": "2024/5/3 18:59",
+        "disp_service_end": "5/3 18:59"
       }
     ],
-    "random_key": "6n8tcsc6"
+    "random_key": "5ugn44fh"
   },
   "event_info": [],
-  "appearance_gacha_id": "207861",
+  "appearance_gacha_id": "207951",
   "user_info": {
     "reward_to": 1,
     "weapon_max": null,
     "weapon_count": null,
     "summon_max": null,
     "summon_count": null,
-    "money": "285848164",
-    "user_money": "83047",
+    "money": "289382614",
+    "user_money": "89627",
     "requirement_money": 100,
     "available_times": 0,
     "limit_count": 100,
@@ -149,7 +149,7 @@
     {
       "ticket_id": "10021",
       "type": "legendticket",
-      "gacha_id": "207860",
+      "gacha_id": "207950",
       "campaign_id": "",
       "title": "Sレア以上確定ガチャチケット",
       "description": "Sレア以上が必ず当たる、特別なガチャチケットです。",
@@ -168,6 +168,20 @@
       "title": "10th アニバーサリーガチャ",
       "description": "10th アニバーサリーガチャが引けるチケット！",
       "count": "9",
+      "expired": false,
+      "times": "1",
+      "is_before_available": false,
+      "available_date": "",
+      "is_choice_lineup": false
+    },
+    {
+      "ticket_id": "111331",
+      "type": "ticketonly",
+      "gacha_id": "111331",
+      "campaign_id": "",
+      "title": "2024年4月Sレア武器確定ガチャ",
+      "description": "Sレア武器確定ガチャが引けるチケット！",
+      "count": "10",
       "expired": false,
       "times": "1",
       "is_before_available": false,
@@ -192,11 +206,11 @@
   "ceiling": {
     "name": "蒼光の御印",
     "is_available": true,
-    "start": "2024/4/15 19:00",
-    "end": "2024/4/18 18:59",
-    "disp_end": "4/18 18:59",
+    "start": "2024/4/30 12:00",
+    "end": "2024/5/3 18:59",
+    "disp_end": "5/3 18:59",
     "can_exchange": false,
-    "use_count": "11"
+    "use_count": "10"
   },
   "old_redceiling": [],
   "ceiling_bonus_item": {
@@ -256,11 +270,11 @@
   },
   "draw_starlegend_gacha_id": 0,
   "header_images": [
-    "1040423000",
-    "1040119300"
+    "1040219200",
+    "1040119400"
   ],
   "logo_image": "logo",
   "beginner300_remind_popup": null,
   "classic300_remind_popup": null,
-  "gacha_token": "70dba27595755772"
+  "gacha_token": "8ed69654b17bdd29"
 }
