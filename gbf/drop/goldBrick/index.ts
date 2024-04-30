@@ -5,6 +5,8 @@ import dayjs from 'dayjs'
 (async () => {
   const env = dotenv.config().parsed
   const TARGET_ITEM_KEY = ['17_20004']
+  console.log(env)
+
   if (!env) {
     console.log('请先添加环境变量')
     return
