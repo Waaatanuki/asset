@@ -26,6 +26,7 @@ import dayjs from 'dayjs'
     data: [],
   }))
 
+  const uidList: string[] = []
   for (let index = 0; index < diffDays + 1; index++) {
     const date = dayjs(startDate).add(index, 'day').format('YYYY-MM-DD')
 
@@ -63,6 +64,9 @@ import dayjs from 'dayjs'
       if (!hitQuest)
         continue
 
+      if (!uidList.includes(dropInfo.uid))
+        uidList.push(dropInfo.uid)
+
       hitQuest.total++
       dropInfo.reward.forEach((treasure) => {
         if (TARGET_ITEM_KEY.includes(treasure.key)) {
@@ -88,6 +92,7 @@ import dayjs from 'dayjs'
       hit?.data.push(_d)
     })
   }
+  console.log('记录玩家数量：', uidList.length)
 
   fsPromises.writeFile('./gbf/drop/goldBrick/global.json', JSON.stringify({ updateTime: dayjs().format('YYYY-MM-DD HH:mm:ss'), data: res }))
 })()
