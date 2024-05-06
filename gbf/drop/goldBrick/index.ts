@@ -1,20 +1,21 @@
 import fsPromises from 'node:fs/promises'
 import dotenv from 'dotenv'
 import dayjs from 'dayjs'
+import QuestData from '../Quest.json'
 
 (async () => {
   const env = dotenv.config().parsed
   const TARGET_ITEM_KEY = ['17_20004']
-  console.log(env)
 
   if (!env) {
     console.log('请先添加环境变量')
     return
   }
-  const questResp = await fetch(`${env.BASE_ADMIN_API}/ext/quest`, {
-    method: 'get',
-  })
-  const { data: Quest }: { data: Quest[] } = await questResp.json()
+  // const questResp = await fetch(`${env.BASE_ADMIN_API}/ext/quest`, {
+  //   method: 'get',
+  // })
+  // const { data: Quest }: { data: Quest[] } = await questResp.json()
+  const Quest = QuestData
 
   const startDate = '2022-03-09'
   const endDate = dayjs().format('YYYY-MM-DD')

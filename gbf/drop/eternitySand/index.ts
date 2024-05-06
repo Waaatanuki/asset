@@ -1,6 +1,7 @@
 import fsPromises from 'node:fs/promises'
 import dotenv from 'dotenv'
 import dayjs from 'dayjs'
+import QuestData from '../Quest.json'
 
 (async () => {
   const env = dotenv.config().parsed
@@ -10,10 +11,11 @@ import dayjs from 'dayjs'
     return
   }
 
-  const questResp = await fetch(`${env.BASE_ADMIN_API}/ext/quest`, {
-    method: 'get',
-  })
-  const { data: Quest }: { data: Quest[] } = await questResp.json()
+  // const questResp = await fetch(`${env.BASE_ADMIN_API}/ext/quest`, {
+  //   method: 'get',
+  // })
+  // const { data: Quest }: { data: Quest[] } = await questResp.json()
+  const Quest = QuestData
 
   const startDate = '2024-03-05'
   const endDate = dayjs().format('YYYY-MM-DD')
