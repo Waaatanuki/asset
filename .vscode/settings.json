@@ -43,9 +43,5 @@
     "json",
     "jsonc",
     "yaml"
-  ],
-
-  "code-runner.executorMap": {
-    "typescript": "esno"
-  }
+  ]
 }
