@@ -1,33 +1,28 @@
 import fsPromises from 'node:fs/promises'
 import dotenv from 'dotenv'
 import dayjs from 'dayjs'
-import { eventInfo } from './event';
 
 (async () => {
   const env = dotenv.config().parsed
-  const questType = '1'
+
+  if (!env)
+    return
+
   const isBlueBox = false
   const isBlueTreasure = false
-  const TARGET_ITEM_KEY = [
-    { key: '1_1040025400', comment: '极星器 剑' },
-    { key: '1_1040816300', comment: '极星器 琴' },
-    { key: '1_1040618600', comment: '极星器 拳' },
-  ].map(i => i.key)
+  const questResp = await fetch(`${env.BASE_ADMIN_API}/gm/drop/celestialWeapon/quest`, { method: 'get' })
+  const { data }: { data: { eventInfo: Event[], targetItem: string[] } } = await questResp.json()
 
-  if (!env) {
-    console.log('请先添加环境变量')
-    return
-  }
+  const eventInfo = data.eventInfo
+  const TARGET_ITEM_KEY = data.targetItem
 
   const lastEvent = eventInfo.at(-1)!
   const startDate = lastEvent.date[0]
   const endDate = lastEvent.date[1]
   const targetQuest = lastEvent.quest.map(q => ({
     ...q,
-    questType,
     isBlueBox,
     isBlueTreasure,
-
   }))
   const diffDays = dayjs(endDate).diff(startDate, 'day')
 
@@ -111,10 +106,20 @@ interface Quest {
   questId: string
   questName: string
   questImage: string
-  questType: string
   isBlueBox: boolean
   isBlueTreasure: boolean
   targetItemCount: number
   total: number
   blueChest: number
+}
+
+interface Event {
+  value: string
+  title: string
+  date: string[]
+  quest: {
+    questId: string
+    questName: string
+    questImage: string
+  }[]
 }
