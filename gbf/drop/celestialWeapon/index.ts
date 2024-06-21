@@ -8,6 +8,7 @@ import dayjs from 'dayjs'
   if (!env)
     return
 
+  const questType = '1'
   const isBlueBox = false
   const isBlueTreasure = false
   const questResp = await fetch(`${env.BASE_ADMIN_API}/gm/drop/celestialWeapon/quest`, { method: 'get' })
@@ -21,6 +22,7 @@ import dayjs from 'dayjs'
   const endDate = lastEvent.date[1]
   const targetQuest = lastEvent.quest.map(q => ({
     ...q,
+    questType,
     isBlueBox,
     isBlueTreasure,
   }))
@@ -123,6 +125,7 @@ interface Event {
   quest: {
     questId: string
     questName: string
+    questType: string
     questImage: string
   }[]
 }
