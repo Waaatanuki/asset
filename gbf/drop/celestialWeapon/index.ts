@@ -68,11 +68,14 @@ import dayjs from 'dayjs'
 
   fsPromises.readFile('./gbf/drop/celestialWeapon/global.json', { encoding: 'utf8' }).then((data) => {
     const globalData: GlobalData = JSON.parse(data)
-    if (globalData.data[0]?.value !== lastEvent.value) {
+    let hit = globalData.data.find(event => event.value === lastEvent.value)
+    if (hit)
+      hit = { ...lastEvent, quest: res }
+    else
       globalData.data.unshift({ ...lastEvent, quest: res })
-      globalData.updateTime = dayjs().format('YYYY-MM-DD HH:mm:ss')
-      fsPromises.writeFile('./gbf/drop/celestialWeapon/global.json', JSON.stringify(globalData))
-    }
+
+    globalData.updateTime = dayjs().format('YYYY-MM-DD HH:mm:ss')
+    fsPromises.writeFile('./gbf/drop/celestialWeapon/global.json', JSON.stringify(globalData, null, 2))
   })
 })()
 
