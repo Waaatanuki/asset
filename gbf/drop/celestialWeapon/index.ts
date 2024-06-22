@@ -35,6 +35,7 @@ import dayjs from 'dayjs'
     blueChest: 0,
   }))
 
+  const uidList: string[] = []
   for (let index = 0; index < diffDays + 1; index++) {
     const date = dayjs(startDate).add(index, 'day').format('YYYY-MM-DD')
 
@@ -59,6 +60,9 @@ import dayjs from 'dayjs'
       if (!hitQuest)
         continue
 
+      if (!uidList.includes(dropInfo.uid))
+        uidList.push(dropInfo.uid)
+
       hitQuest.total++
       dropInfo.reward.forEach((treasure) => {
         treasure.box === '11' && hitQuest.blueChest++
@@ -67,7 +71,7 @@ import dayjs from 'dayjs'
     }
     console.log(`完成${date}统计`)
   }
-
+  console.log('记录玩家数量：', uidList.length)
   fsPromises.readFile('./gbf/drop/celestialWeapon/global.json', { encoding: 'utf8' }).then((data) => {
     const globalData: GlobalData = JSON.parse(data)
     const hit = globalData.data.find(event => event.value === lastEvent.value)
