@@ -1,5 +1,5 @@
 {
-  "updateTime": "2024-06-24 13:05:31",
+  "updateTime": "2024-06-24 18:23:43",
   "data": [
     {
       "value": "teamraid073",
@@ -16,8 +16,8 @@
           "questType": "1",
           "isBlueBox": false,
           "isBlueTreasure": false,
-          "targetItemCount": 2120,
-          "total": 877821,
+          "targetItemCount": 2178,
+          "total": 900034,
           "blueChest": 0
         },
         {
@@ -27,8 +27,8 @@
           "questType": "1",
           "isBlueBox": false,
           "isBlueTreasure": false,
-          "targetItemCount": 275,
-          "total": 102349,
+          "targetItemCount": 476,
+          "total": 183615,
           "blueChest": 0
         },
         {
