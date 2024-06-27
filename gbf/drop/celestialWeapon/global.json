@@ -1,5 +1,5 @@
 {
-  "updateTime": "2024-06-27 08:55:20",
+  "updateTime": "2024-06-27 22:19:34",
   "data": [
     {
       "value": "teamraid073",
@@ -16,8 +16,8 @@
           "questType": "1",
           "isBlueBox": false,
           "isBlueTreasure": false,
-          "targetItemCount": 2519,
-          "total": 1056431,
+          "targetItemCount": 2818,
+          "total": 1194831,
           "blueChest": 0
         },
         {
@@ -27,8 +27,8 @@
           "questType": "1",
           "isBlueBox": false,
           "isBlueTreasure": false,
-          "targetItemCount": 778,
-          "total": 315963,
+          "targetItemCount": 832,
+          "total": 337964,
           "blueChest": 0
         },
         {
@@ -38,8 +38,8 @@
           "questType": "1",
           "isBlueBox": false,
           "isBlueTreasure": false,
-          "targetItemCount": 64,
-          "total": 17673,
+          "targetItemCount": 90,
+          "total": 22444,
           "blueChest": 0
         },
         {
@@ -49,8 +49,8 @@
           "questType": "1",
           "isBlueBox": false,
           "isBlueTreasure": false,
-          "targetItemCount": 449,
-          "total": 172320,
+          "targetItemCount": 483,
+          "total": 186951,
           "blueChest": 0
         },
         {
@@ -60,8 +60,8 @@
           "questType": "1",
           "isBlueBox": false,
           "isBlueTreasure": false,
-          "targetItemCount": 351,
-          "total": 107881,
+          "targetItemCount": 606,
+          "total": 190008,
           "blueChest": 0
         }
       ]
