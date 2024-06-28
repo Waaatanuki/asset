@@ -1,85 +1,44 @@
 import fsPromises from 'node:fs/promises'
-import dotenv from 'dotenv'
-import dayjs from 'dayjs'
 
-(async () => {
-  const env = dotenv.config().parsed
-  const TARGET_ITEM_KEY = ['10_215']
+const TARGET_ITEM_KEY = ['10_215']
 
-  if (!env)
-    return
-
-  const questResp = await fetch(`${env.BASE_ADMIN_API}/ext/quest`, {
-    method: 'get',
-  })
-  const { data: Quest }: { data: Quest[] } = await questResp.json()
-
-  const startDate = '2024-03-05'
-  const endDate = dayjs().format('YYYY-MM-DD')
-  const targetQuest = Quest.filter(q => TARGET_ITEM_KEY.includes(q.targetItemKey))
-  const diffDays = dayjs(endDate).diff(startDate, 'day')
-
-  const res: GlobalData[] = targetQuest.map(q => ({
+function main(questList: Quest[], updateTime: string) {
+  const res: GlobalData[] = questList.map(q => ({
     ...q,
     data: [],
   }))
 
-  const uidList: string[] = []
-  for (let index = 0; index < diffDays + 1; index++) {
-    const date = dayjs(startDate).add(index, 'day').format('YYYY-MM-DD')
-
-    const dayData = targetQuest.map(q => ({
-      questId: q.questId,
+  return function analytics(date: string, battles: DropInfo[], isFinish: boolean) {
+    res.forEach(quest => quest.data.push({
       date,
       targetItemCount: 0,
       total: 0,
       blueChest: 0,
     }))
 
-    const body = JSON.stringify({
-      questId: targetQuest.map(q => q.questId),
-      dateRange: [date, date],
-    })
+    for (let i = battles.length - 1; i >= 0; i--) {
+      const dropInfo: DropInfo = battles[i]
 
-    const resp = await fetch(`${env.BASE_RESOURCE_API}/gbf/reward/battle/search`, {
-      headers: { 'Content-Type': 'application/json' },
-      method: 'post',
-      body,
-    })
-
-    const { list } = await resp.json()
-
-    for (let i = list.length - 1; i >= 0; i--) {
-      const dropInfo: DropInfo = list[i]
-
-      const hitQuest = dayData.find(quest => quest.questId === dropInfo.questId)
+      const hitQuest = res.find(quest => quest.questId === dropInfo.questId)
 
       if (!hitQuest)
         continue
 
-      if (!uidList.includes(dropInfo.uid))
-        uidList.push(dropInfo.uid)
+      const currentDayData = hitQuest.data.at(-1)!
 
-      hitQuest.total++
+      currentDayData.total++
       dropInfo.reward.forEach((treasure) => {
-        treasure.box === '11' && hitQuest.blueChest++
-        TARGET_ITEM_KEY.includes(treasure.key) && hitQuest.targetItemCount++
+        treasure.box === '11' && currentDayData.blueChest++
+        TARGET_ITEM_KEY.includes(treasure.key) && currentDayData.targetItemCount++
       })
     }
-    console.log(`完成${date}统计`)
 
-    dayData.forEach((d) => {
-      const hit = res.find(q => q.questId === d.questId)
-      const _d: any = { ...d }
-      delete _d.questId
-      hit?.data.push(_d)
-    })
+    if (isFinish)
+      fsPromises.writeFile('./gbf/drop/eternitySand/global.json', JSON.stringify({ updateTime, data: res }))
   }
-  console.log('记录玩家数量：', uidList.length)
+}
 
-  fsPromises.writeFile('./gbf/drop/eternitySand/global.json', JSON.stringify({ updateTime: dayjs().format('YYYY-MM-DD HH:mm:ss'), data: res }))
-})()
-
+export default { main, TARGET_ITEM_KEY }
 interface DropInfo {
   accountToken: string
   battleId: string
