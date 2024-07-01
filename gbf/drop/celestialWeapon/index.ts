@@ -8,31 +8,24 @@ import dayjs from 'dayjs'
   if (!env)
     return
 
-  const questType = '1'
-  const isBlueBox = false
-  const isBlueTreasure = false
   const questResp = await fetch(`${env.BASE_ADMIN_API}/gm/drop/celestialWeapon/quest`, { method: 'get' })
-  const { data }: { data: { eventInfo: Event[], targetItem: string[] } } = await questResp.json()
+  const { data }: { data: { eventInfo: Event[], targetItem: { revenantWeapon: string[], celestialWeapon: string[] } } } = await questResp.json()
 
   const eventInfo = data.eventInfo
-  const TARGET_ITEM_KEY = data.targetItem
+  const targetItem = data.targetItem
 
   const lastEvent = eventInfo.at(-1)!
   const startDate = lastEvent.date[0]
   const endDate = lastEvent.date[1]
-  const targetQuest = lastEvent.quest.map(q => ({
-    ...q,
-    questType,
-    isBlueBox,
-    isBlueTreasure,
-  }))
+  const targetQuest = lastEvent.quest
+
   const diffDays = dayjs(endDate).diff(startDate, 'day')
 
   const res: Quest[] = targetQuest.map(q => ({
     ...q,
-    targetItemCount: 0,
+    celestialWeapon: 0,
+    revenantWeapon: 0,
     total: 0,
-    blueChest: 0,
   }))
 
   const uidList: string[] = []
@@ -65,8 +58,11 @@ import dayjs from 'dayjs'
 
       hitQuest.total++
       dropInfo.reward.forEach((treasure) => {
-        treasure.box === '11' && hitQuest.blueChest++
-        TARGET_ITEM_KEY.includes(treasure.key) && hitQuest.targetItemCount++
+        if (targetItem.celestialWeapon.includes(treasure.key))
+          hitQuest.celestialWeapon++
+
+        if (targetItem.revenantWeapon.includes(treasure.key))
+          hitQuest.revenantWeapon++
       })
     }
     console.log(`完成${date}统计`)
@@ -115,11 +111,9 @@ interface Quest {
   questId: string
   questName: string
   questImage: string
-  isBlueBox: boolean
-  isBlueTreasure: boolean
-  targetItemCount: number
   total: number
-  blueChest: number
+  celestialWeapon: number
+  revenantWeapon: number
 }
 
 interface Event {
