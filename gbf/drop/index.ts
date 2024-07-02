@@ -12,7 +12,8 @@ import eternitySandAnalytics from './eternitySand';
   const questResp = await fetch(`${env.BASE_ADMIN_API}/ext/quest`, { method: 'get' })
   const { data: Quest }: { data: Quest[] } = await questResp.json()
 
-  const startDate = '2022-03-09'
+  // const startDate = '2022-03-09'
+  const startDate = dayjs().add(-7, 'days').format('YYYY-MM-DD')
   const endDate = dayjs().format('YYYY-MM-DD')
   const diffDays = dayjs(endDate).diff(startDate, 'day')
   const updateTime = dayjs().format('YYYY-MM-DD HH:mm:ss')
@@ -21,8 +22,8 @@ import eternitySandAnalytics from './eternitySand';
   const sandTargetQuest = Quest.filter(q => eternitySandAnalytics.TARGET_ITEM_KEY.includes(q.targetItemKey))
   const totalTargetQuest = ffjTargetQuest.concat(sandTargetQuest)
 
-  const ffj = goldBrickAnalytics.main(ffjTargetQuest, updateTime)
-  const sand = eternitySandAnalytics.main(sandTargetQuest, updateTime)
+  const ffj = await goldBrickAnalytics.main(ffjTargetQuest, startDate, updateTime)
+  const sand = await eternitySandAnalytics.main(sandTargetQuest, startDate, updateTime)
 
   const uidList: string[] = []
 

@@ -2,19 +2,28 @@ import fsPromises from 'node:fs/promises'
 
 const TARGET_ITEM_KEY = ['10_215']
 
-function main(questList: Quest[], updateTime: string) {
-  const res: GlobalData[] = questList.map(q => ({
-    ...q,
-    data: [],
-  }))
+async function main(questList: Quest[], startDate: string, updateTime: string) {
+  const text = await fsPromises.readFile('./gbf/drop/eternitySand/global.json', { encoding: 'utf-8' })
+  let res: GlobalData[] = JSON.parse(text).data ?? []
+
+  if (res.length === 0)
+    res = questList.map(q => ({ ...q, data: [] }))
+
+  res.forEach((quest) => {
+    const hitIndex = quest.data.findIndex(d => d.date === startDate)
+    if (hitIndex !== -1)
+      quest.data.splice(hitIndex)
+  })
 
   return function analytics(date: string, battles: DropInfo[], isFinish: boolean) {
-    res.forEach(quest => quest.data.push({
-      date,
-      targetItemCount: 0,
-      total: 0,
-      blueChest: 0,
-    }))
+    res.forEach((quest) => {
+      quest.data.push({
+        date,
+        targetItemCount: 0,
+        total: 0,
+        blueChest: 0,
+      })
+    })
 
     for (let i = battles.length - 1; i >= 0; i--) {
       const dropInfo: DropInfo = battles[i]

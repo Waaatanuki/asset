@@ -2,24 +2,33 @@ import fsPromises from 'node:fs/promises'
 
 const TARGET_ITEM_KEY = ['17_20004']
 
-function main(questList: Quest[], updateTime: string) {
-  const res: GlobalData[] = questList.map(q => ({
-    ...q,
-    data: [],
-  }))
+async function main(questList: Quest[], startDate: string, updateTime: string) {
+  const text = await fsPromises.readFile('./gbf/drop/goldBrick/global.json', { encoding: 'utf-8' })
+  let res: GlobalData[] = JSON.parse(text).data ?? []
+
+  if (res.length === 0)
+    res = questList.map(q => ({ ...q, data: [] }))
+
+  res.forEach((quest) => {
+    const hitIndex = quest.data.findIndex(d => d.date === startDate)
+    if (hitIndex !== -1)
+      quest.data.splice(hitIndex)
+  })
 
   return function analytics(date: string, battles: DropInfo[], isFinish: boolean) {
-    res.forEach(quest => quest.data.push({
-      date,
-      total: 0,
-      blueChest: 0,
-      redChestFFJ: 0,
-      blueChestFFJ: 0,
-      normalChestFFJ: 0,
-      ring1: 0,
-      ring2: 0,
-      ring3: 0,
-    }))
+    res.forEach((quest) => {
+      quest.data.push({
+        date,
+        total: 0,
+        blueChest: 0,
+        redChestFFJ: 0,
+        blueChestFFJ: 0,
+        normalChestFFJ: 0,
+        ring1: 0,
+        ring2: 0,
+        ring3: 0,
+      })
+    })
 
     for (let i = battles.length - 1; i >= 0; i--) {
       const dropInfo: DropInfo = battles[i]
