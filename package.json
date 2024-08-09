@@ -1,0 +1,14 @@
+{
+  "name": "asset",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "personal asset",
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.3",
+    "@types/node": "^20.11.14",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  }
+}
