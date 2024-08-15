@@ -1,0 +1,532 @@
+[
+  {
+    "questLevel": "Lv80",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 87580,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 3242
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 79264,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 1260
+          },
+          {
+            "key": "1_1040119900",
+            "count": 1240
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv85",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 5638,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 170
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 3404,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 54
+          },
+          {
+            "key": "1_1040119900",
+            "count": 58
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv90",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 5433,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 177
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 5844,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 92
+          },
+          {
+            "key": "1_1040119900",
+            "count": 85
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv95",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 2944,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 91
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 3121,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 37
+          },
+          {
+            "key": "1_1040119900",
+            "count": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv100",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 5611,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 182
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 12738,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 185
+          },
+          {
+            "key": "1_1040119900",
+            "count": 164
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv105",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 3326,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 95
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 1773,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 25
+          },
+          {
+            "key": "1_1040119900",
+            "count": 23
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv110",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 4046,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 161
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 1957,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 24
+          },
+          {
+            "key": "1_1040119900",
+            "count": 32
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv115",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 2556,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 90
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 1028,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 12
+          },
+          {
+            "key": "1_1040119900",
+            "count": 16
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv120",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 2666,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 82
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 1771,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 38
+          },
+          {
+            "key": "1_1040119900",
+            "count": 28
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv125",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 1798,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 51
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 5999,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 113
+          },
+          {
+            "key": "1_1040119900",
+            "count": 117
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv130",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 2090,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 67
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 1488,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 26
+          },
+          {
+            "key": "1_1040119900",
+            "count": 25
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv135",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 1603,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 59
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 1037,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 18
+          },
+          {
+            "key": "1_1040119900",
+            "count": 12
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv140",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 1649,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 73
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 1008,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 17
+          },
+          {
+            "key": "1_1040119900",
+            "count": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv145",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 1646,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 61
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 732,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 10
+          },
+          {
+            "key": "1_1040119900",
+            "count": 12
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv150",
+    "event": [
+      {
+        "title": "2024.5月 暗神灭战",
+        "total": 32139,
+        "targetItem": [
+          {
+            "key": "1_1040423200",
+            "count": 1234
+          }
+        ]
+      },
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 8903,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 207
+          },
+          {
+            "key": "1_1040119900",
+            "count": 171
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv155",
+    "event": [
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 12442,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 306
+          },
+          {
+            "key": "1_1040119900",
+            "count": 289
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv160",
+    "event": [
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 5097,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 129
+          },
+          {
+            "key": "1_1040119900",
+            "count": 116
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv165",
+    "event": [
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 2964,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 55
+          },
+          {
+            "key": "1_1040119900",
+            "count": 70
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv170",
+    "event": [
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 3529,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 104
+          },
+          {
+            "key": "1_1040119900",
+            "count": 95
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "questLevel": "Lv175",
+    "event": [
+      {
+        "title": "2024.8月 土神灭战",
+        "total": 44432,
+        "targetItem": [
+          {
+            "key": "1_1040218500",
+            "count": 1162
+          },
+          {
+            "key": "1_1040119900",
+            "count": 1147
+          }
+        ]
+      }
+    ]
+  }
+]
