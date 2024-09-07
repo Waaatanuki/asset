@@ -1,6 +1,64 @@
 {
-  "updateTime": "2024-07-01 20:41:37",
+  "updateTime": "2024-09-07 20:46:27",
   "data": [
+    {
+      "value": "teamraid074",
+      "title": "第74回古战场(土有利)",
+      "date": [
+        "2024-09-07",
+        "2024-09-14"
+      ],
+      "quest": [
+        {
+          "questId": "922461",
+          "questName": "90HELL",
+          "questImage": "teamraid074_hell90",
+          "celestialWeapon": 42,
+          "revenantWeapon": 27,
+          "total": 14868
+        },
+        {
+          "questId": "922471",
+          "questName": "95HELL",
+          "questImage": "teamraid074_hell95",
+          "celestialWeapon": 0,
+          "revenantWeapon": 0,
+          "total": 0
+        },
+        {
+          "questId": "922481",
+          "questName": "100HELL",
+          "questImage": "teamraid074_hell100",
+          "celestialWeapon": 0,
+          "revenantWeapon": 0,
+          "total": 0
+        },
+        {
+          "questId": "922491",
+          "questName": "150HELL",
+          "questImage": "teamraid074_hell150",
+          "celestialWeapon": 0,
+          "revenantWeapon": 0,
+          "total": 0
+        },
+        {
+          "questId": "922501",
+          "questName": "200HELL",
+          "questImage": "teamraid074_hell200",
+          "celestialWeapon": 0,
+          "revenantWeapon": 0,
+          "total": 0
+        },
+        {
+          "questId": "922511",
+          "questName": "250HELL",
+          "questImage": "teamraid074_hell250",
+          "celestialWeapon": 0,
+          "revenantWeapon": 0,
+          "total": 0
+        }
+      ]
+    },
     {
       "value": "teamraid073",
       "title": "第73回古战场(暗有利)",
