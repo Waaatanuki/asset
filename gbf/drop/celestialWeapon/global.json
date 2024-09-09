@@ -1,5 +1,5 @@
 {
-  "updateTime": "2024-09-08 21:40:32",
+  "updateTime": "2024-09-09 09:43:52",
   "data": [
     {
       "value": "teamraid074",
@@ -13,9 +13,9 @@
           "questId": "922461",
           "questName": "90HELL",
           "questImage": "teamraid074_hell90",
-          "celestialWeapon": 1377,
-          "revenantWeapon": 1162,
-          "total": 462834
+          "celestialWeapon": 1633,
+          "revenantWeapon": 1397,
+          "total": 547820
         },
         {
           "questId": "922471",
