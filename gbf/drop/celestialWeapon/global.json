@@ -1,5 +1,5 @@
 {
-  "updateTime": "2024-09-12 14:34:18",
+  "updateTime": "2024-09-12 23:11:39",
   "data": [
     {
       "value": "teamraid074",
@@ -13,55 +13,55 @@
           "questId": "922461",
           "questName": "90HELL",
           "questImage": "teamraid074_hell90",
-          "celestialWeapon": 3629,
-          "revenantWeapon": 2942,
-          "bigMeat": 1560153,
-          "total": 1179235
+          "celestialWeapon": 3785,
+          "revenantWeapon": 3047,
+          "bigMeat": 1615863,
+          "total": 1220799
         },
         {
           "questId": "922471",
           "questName": "95HELL",
           "questImage": "teamraid074_hell95",
-          "celestialWeapon": 194,
-          "revenantWeapon": 193,
-          "bigMeat": 118357,
-          "total": 70150
+          "celestialWeapon": 226,
+          "revenantWeapon": 230,
+          "bigMeat": 135371,
+          "total": 80390
         },
         {
           "questId": "922481",
           "questName": "100HELL",
           "questImage": "teamraid074_hell100",
-          "celestialWeapon": 724,
-          "revenantWeapon": 718,
-          "bigMeat": 471071,
-          "total": 193167
+          "celestialWeapon": 738,
+          "revenantWeapon": 729,
+          "bigMeat": 476398,
+          "total": 195641
         },
         {
           "questId": "922491",
           "questName": "150HELL",
           "questImage": "teamraid074_hell150",
-          "celestialWeapon": 723,
-          "revenantWeapon": 641,
-          "bigMeat": 614913,
-          "total": 199279
+          "celestialWeapon": 741,
+          "revenantWeapon": 661,
+          "bigMeat": 633726,
+          "total": 205374
         },
         {
           "questId": "922501",
           "questName": "200HELL",
           "questImage": "teamraid074_hell200",
-          "celestialWeapon": 96,
-          "revenantWeapon": 66,
-          "bigMeat": 100636,
-          "total": 24807
+          "celestialWeapon": 194,
+          "revenantWeapon": 149,
+          "bigMeat": 200762,
+          "total": 48764
         },
         {
           "questId": "922511",
           "questName": "250HELL",
           "questImage": "teamraid074_hell250",
-          "celestialWeapon": 46,
-          "revenantWeapon": 40,
+          "celestialWeapon": 165,
+          "revenantWeapon": 161,
           "bigMeat": 0,
-          "total": 12459
+          "total": 42439
         }
       ]
     },
