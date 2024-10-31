@@ -29,7 +29,7 @@
       "treasure_type": "10"
     }
   },
-  "stone_num": "45962",
+  "stone_num": "52727",
   "gachaticket_popup": [],
   "enable_beginner_free_legend_10": false,
   "enable_free_legend_10": false,
@@ -41,7 +41,7 @@
   "legend": {
     "lineup": [
       {
-        "id": "208660",
+        "id": "208750",
         "name": "レジェンド10連ガチャ",
         "class_name": "prt-title-legend10",
         "bg_image1": "gacha_bg1",
@@ -51,8 +51,8 @@
         },
         "campaign_id": null,
         "campaign_news_id": null,
-        "start": "10月15日 19:00",
-        "end": "12月31日 23:59",
+        "start": "10月31日 12:00",
+        "end": "11月3日 18:59",
         "image_path": "",
         "text_btn_image": "text_legend10",
         "text_btn_image_stone": "text_stone10",
@@ -65,7 +65,7 @@
           {
             "ticket_id": 20010,
             "ticket_name": "レジェンド10連ガチャチケット",
-            "ticket_num": 0,
+            "ticket_num": 1,
             "ticket_end_at": null,
             "text_btn_image_ticket": "text_legendticket10",
             "type": null,
@@ -75,12 +75,12 @@
           }
         ],
         "times": "10",
-        "service_start": "2024/10/15 19:00",
-        "service_end": "2024/10/19 18:59",
-        "disp_service_end": "10/19 18:59"
+        "service_start": "2024/10/31 12:00",
+        "service_end": "2024/11/3 18:59",
+        "disp_service_end": "11/3 18:59"
       },
       {
-        "id": "208661",
+        "id": "208751",
         "name": "レジェンドガチャ",
         "class_name": "prt-title-legend1",
         "bg_image1": "gacha_bg1",
@@ -93,8 +93,8 @@
         },
         "campaign_id": null,
         "campaign_news_id": null,
-        "start": "10月15日 19:00",
-        "end": "12月31日 23:59",
+        "start": "10月31日 12:00",
+        "end": "11月3日 18:59",
         "image_path": "",
         "text_btn_image": "text_legend",
         "text_btn_image_stone": "text_stone",
@@ -107,7 +107,7 @@
           {
             "ticket_id": 20011,
             "ticket_name": "レジェンドガチャチケット",
-            "ticket_num": 89,
+            "ticket_num": 101,
             "ticket_end_at": null,
             "text_btn_image_ticket": "text_legendticket",
             "type": null,
@@ -117,25 +117,25 @@
           }
         ],
         "times": "1",
-        "service_start": "2024/10/15 19:00",
-        "service_end": "2024/10/19 18:59",
-        "disp_service_end": "10/19 18:59"
+        "service_start": "2024/10/31 12:00",
+        "service_end": "2024/11/3 18:59",
+        "disp_service_end": "11/3 18:59"
       }
     ],
-    "random_key": "6mvhtwh7"
+    "random_key": "5u8t5kx8"
   },
   "event_info": [],
-  "appearance_gacha_id": "208661",
+  "appearance_gacha_id": "208751",
   "user_info": {
     "reward_to": 1,
-    "money": "315931978",
-    "user_money": "45962",
+    "money": "317774668",
+    "user_money": "52727",
     "requirement_money": 100,
-    "available_times": 0,
+    "available_times": 100,
     "limit_count": 100,
-    "free_count": 0,
+    "free_count": 100,
     "gacha_skip_flag": "0",
-    "is_free": false,
+    "is_free": true,
     "normal_gacha_id": "6002"
   },
   "normal": {
@@ -145,7 +145,7 @@
     {
       "ticket_id": "10021",
       "type": "legendticket",
-      "gacha_id": "208660",
+      "gacha_id": "208750",
       "campaign_id": "",
       "title": "Sレア以上確定ガチャチケット",
       "description": "Sレア以上が必ず当たる、特別なガチャチケットです。",
@@ -154,20 +154,6 @@
       "times": "1",
       "is_before_available": false,
       "available_date": null,
-      "is_choice_lineup": false
-    },
-    {
-      "ticket_id": "112221",
-      "type": "ticketonly",
-      "gacha_id": "112221",
-      "campaign_id": "",
-      "title": "2024年9月イベントSSレア確定ガチャ",
-      "description": "2024/9/7までに登場したSSレアが出現します。",
-      "count": "1",
-      "expired": false,
-      "times": "1",
-      "is_before_available": false,
-      "available_date": "",
       "is_choice_lineup": false
     }
   ],
@@ -188,9 +174,9 @@
   "ceiling": {
     "name": "蒼光の御印",
     "is_available": true,
-    "start": "2024/10/15 19:00",
-    "end": "2024/10/19 18:59",
-    "disp_end": "10/19 18:59",
+    "start": "2024/10/31 12:00",
+    "end": "2024/11/3 18:59",
+    "disp_end": "11/3 18:59",
     "can_exchange": false,
     "use_count": 0
   },
@@ -252,12 +238,11 @@
   },
   "draw_starlegend_gacha_id": 0,
   "header_images": [
-    "1040120200",
-    "1040816900",
-    "1040518000"
+    "1040423700",
+    "1040027600"
   ],
   "logo_image": "logo",
   "beginner300_remind_popup": null,
   "classic300_remind_popup": null,
-  "gacha_token": "e544d7a83ee00c1e"
+  "gacha_token": "2ede4d8db9f89741"
 }
