@@ -1,5 +1,5 @@
 {
-  "updateTime": "2024-11-09 14:49:55",
+  "updateTime": "2024-11-09 21:00:16",
   "data": [
     {
       "value": "teamraid075",
@@ -13,10 +13,10 @@
           "questId": "924561",
           "questName": "90HELL",
           "questImage": "teamraid075_hell90",
-          "celestialWeapon": 1065,
-          "revenantWeapon": 1051,
-          "bigMeat": 530610,
-          "total": 470414
+          "celestialWeapon": 1552,
+          "revenantWeapon": 1499,
+          "bigMeat": 757868,
+          "total": 663556
         },
         {
           "questId": "924571",
