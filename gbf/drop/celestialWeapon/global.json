@@ -1,5 +1,5 @@
 {
-  "updateTime": "2024-11-14 09:06:01",
+  "updateTime": "2024-11-14 10:01:49",
   "data": [
     {
       "value": "teamraid075",
@@ -51,8 +51,8 @@
           "questImage": "teamraid075_hell200",
           "celestialWeapon": 151,
           "revenantWeapon": 124,
-          "bigMeat": 192320,
-          "total": 48021
+          "bigMeat": 192324,
+          "total": 48022
         },
         {
           "questId": "924611",
@@ -61,7 +61,7 @@
           "celestialWeapon": 281,
           "revenantWeapon": 253,
           "bigMeat": 0,
-          "total": 92237
+          "total": 92238
         }
       ]
     },
