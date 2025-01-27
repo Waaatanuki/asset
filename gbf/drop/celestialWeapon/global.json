@@ -1,6 +1,70 @@
 {
-  "updateTime": "2024-11-14 10:01:49",
+  "updateTime": "2025-01-27 10:12:53",
   "data": [
+    {
+      "value": "teamraid076",
+      "title": "第76回古战场(水有利)",
+      "date": [
+        "2025-01-22",
+        "2025-01-29"
+      ],
+      "quest": [
+        {
+          "questId": "926761",
+          "questName": "90HELL",
+          "questImage": "teamraid076_hell90",
+          "celestialWeapon": 2734,
+          "revenantWeapon": 2549,
+          "bigMeat": 1306361,
+          "total": 1131104
+        },
+        {
+          "questId": "926771",
+          "questName": "95HELL",
+          "questImage": "teamraid076_hell95",
+          "celestialWeapon": 110,
+          "revenantWeapon": 107,
+          "bigMeat": 77153,
+          "total": 50568
+        },
+        {
+          "questId": "926781",
+          "questName": "100HELL",
+          "questImage": "teamraid076_hell100",
+          "celestialWeapon": 1102,
+          "revenantWeapon": 1078,
+          "bigMeat": 875422,
+          "total": 368123
+        },
+        {
+          "questId": "926791",
+          "questName": "150HELL",
+          "questImage": "teamraid076_hell150",
+          "celestialWeapon": 1019,
+          "revenantWeapon": 1059,
+          "bigMeat": 1102654,
+          "total": 370521
+        },
+        {
+          "questId": "926801",
+          "questName": "200HELL",
+          "questImage": "teamraid076_hell200",
+          "celestialWeapon": 34,
+          "revenantWeapon": 29,
+          "bigMeat": 47463,
+          "total": 12085
+        },
+        {
+          "questId": "926811",
+          "questName": "250HELL",
+          "questImage": "teamraid076_hell250",
+          "celestialWeapon": 10,
+          "revenantWeapon": 14,
+          "bigMeat": 0,
+          "total": 2974
+        }
+      ]
+    },
     {
       "value": "teamraid075",
       "title": "第75回古战场(风有利)",
