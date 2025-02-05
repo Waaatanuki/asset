@@ -1,5 +1,5 @@
 {
-  "updateTime": "2025-02-01 21:09:36",
+  "updateTime": "2025-02-05 11:09:14",
   "data": [
     {
       "value": "teamraid076",
@@ -13,46 +13,46 @@
           "questId": "926761",
           "questName": "90HELL",
           "questImage": "teamraid076_hell90",
-          "celestialWeapon": 2943,
-          "revenantWeapon": 2780,
-          "bigMeat": 1409353,
-          "total": 1216914
+          "celestialWeapon": 2944,
+          "revenantWeapon": 2783,
+          "bigMeat": 1411422,
+          "total": 1218641
         },
         {
           "questId": "926771",
           "questName": "95HELL",
           "questImage": "teamraid076_hell95",
           "celestialWeapon": 162,
-          "revenantWeapon": 149,
-          "bigMeat": 108559,
-          "total": 71397
+          "revenantWeapon": 151,
+          "bigMeat": 109011,
+          "total": 71722
         },
         {
           "questId": "926781",
           "questName": "100HELL",
           "questImage": "teamraid076_hell100",
-          "celestialWeapon": 1143,
-          "revenantWeapon": 1112,
-          "bigMeat": 906166,
-          "total": 381770
+          "celestialWeapon": 1145,
+          "revenantWeapon": 1115,
+          "bigMeat": 907449,
+          "total": 382249
         },
         {
           "questId": "926791",
           "questName": "150HELL",
           "questImage": "teamraid076_hell150",
-          "celestialWeapon": 1179,
-          "revenantWeapon": 1214,
-          "bigMeat": 1264305,
-          "total": 425119
+          "celestialWeapon": 1182,
+          "revenantWeapon": 1216,
+          "bigMeat": 1267107,
+          "total": 425881
         },
         {
           "questId": "926801",
           "questName": "200HELL",
           "questImage": "teamraid076_hell200",
-          "celestialWeapon": 166,
+          "celestialWeapon": 167,
           "revenantWeapon": 181,
-          "bigMeat": 256160,
-          "total": 64516
+          "bigMeat": 257587,
+          "total": 64854
         },
         {
           "questId": "926811",
@@ -61,7 +61,7 @@
           "celestialWeapon": 263,
           "revenantWeapon": 329,
           "bigMeat": 0,
-          "total": 101568
+          "total": 101667
         }
       ]
     },
