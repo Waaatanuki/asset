@@ -6,7 +6,7 @@ import ratio2 from './ratio2.json'
 
 const data = { list, ratio1, ratio2 }
 
-await writeFile('./gbf/gacha/gbf_gacha_info.json', JSON.stringify(data))
+await writeFile('./gbf/gacha/gachaInfo.json', JSON.stringify(data))
 
 const domStr = await readFile('./gbf/gacha/content.txt', { encoding: 'utf-8' })
 const htmlString = decodeURIComponent(domStr)
@@ -16,4 +16,4 @@ $(`.img-open-character`).each((i, el) => {
   characterId.push(el.attribs.alt)
 })
 
-await writeFile('./gbf/gacha/character_list.json', JSON.stringify(characterId))
+await writeFile('./gbf/gacha/gachaCharacter.json', JSON.stringify(characterId))

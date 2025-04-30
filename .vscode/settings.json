@@ -37,8 +37,6 @@
     "vue",
     "html",
     "markdown",
-    "json",
-    "jsonc",
     "yaml"
   ]
 }

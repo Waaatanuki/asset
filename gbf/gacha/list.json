@@ -29,7 +29,7 @@
       "treasure_type": "10"
     }
   },
-  "stone_num": "172237",
+  "stone_num": "202107",
   "gachaticket_popup": [],
   "enable_collaboration_free_stock": false,
   "collaboration_free_stock_campaign_id": null,
@@ -47,7 +47,46 @@
   "legend": {
     "lineup": [
       {
-        "id": "209430",
+        "id": "294890",
+        "name": "スターレジェンドガチャセット",
+        "class_name": "prt-title-starlegend",
+        "bg_image1": "gacha_bg1",
+        "bg_image2": "gacha_bg2",
+        "discount": {
+          "enable": false
+        },
+        "campaign_id": "453",
+        "campaign_news_id": null,
+        "start": "4月30日 12:00",
+        "end": "5月3日 18:59",
+        "image_path": "gacha/7j341f7j/info/banner_294890_7j341f7j",
+        "text_btn_image": "text_starlegend10",
+        "text_btn_image_stone": "text_stone10",
+        "description": "Sレア以上1回確定10連続ガチャ,SSレア確定ガチャ,<br>未入手のスペリオルシリーズ武器1つ,【蒼光の御印】11個のセット!<br>SSレア確定ガチャでは対象のキャラ解放武器を必ず1つゲット!<br>購入は4/30 12:00～5/3 18:59中1回限定!",
+        "attention": "",
+        "unit_price": "3000",
+        "enable_stone": true,
+        "stone_flg": false,
+        "legend_gacha_ticket_list": null,
+        "campaign_gacha_ids": [
+          {
+            "id": "294890",
+            "name": "スターレジェンドガチャセット",
+            "campaign_id": "453",
+            "text_btn_image": "text_starlegend10",
+            "payment_image": "gacha/info/icon_gacha_mbga_star10ssr",
+            "provision_ratio_type": 0,
+            "is_purchased": false,
+            "is_sold_out": false
+          }
+        ],
+        "times": "10",
+        "service_start": "2025/4/30 12:00",
+        "service_end": "2025/5/3 18:59",
+        "disp_service_end": "5/3 18:59"
+      },
+      {
+        "id": "209570",
         "name": "レジェンド10連ガチャ",
         "class_name": "prt-title-legend10",
         "bg_image1": "gacha_bg1",
@@ -57,8 +96,8 @@
         },
         "campaign_id": null,
         "campaign_news_id": null,
-        "start": "3月31日 12:00",
-        "end": "12月31日 23:59",
+        "start": "4月30日 12:00",
+        "end": "5月3日 18:59",
         "image_path": "",
         "text_btn_image": "text_legend10",
         "text_btn_image_stone": "text_stone10",
@@ -81,12 +120,12 @@
           }
         ],
         "times": "10",
-        "service_start": "2025/3/31 12:00",
-        "service_end": "2025/4/3 18:59",
-        "disp_service_end": "4/3 18:59"
+        "service_start": "2025/4/30 12:00",
+        "service_end": "2025/5/3 18:59",
+        "disp_service_end": "5/3 18:59"
       },
       {
-        "id": "209431",
+        "id": "209571",
         "name": "レジェンドガチャ",
         "class_name": "prt-title-legend1",
         "bg_image1": "gacha_bg1",
@@ -99,8 +138,8 @@
         },
         "campaign_id": null,
         "campaign_news_id": null,
-        "start": "3月31日 12:00",
-        "end": "12月31日 23:59",
+        "start": "4月30日 12:00",
+        "end": "5月3日 18:59",
         "image_path": "",
         "text_btn_image": "text_legend",
         "text_btn_image_stone": "text_stone",
@@ -113,7 +152,7 @@
           {
             "ticket_id": 20011,
             "ticket_name": "レジェンドガチャチケット",
-            "ticket_num": 13,
+            "ticket_num": 46,
             "ticket_end_at": null,
             "text_btn_image_ticket": "text_legendticket",
             "type": null,
@@ -123,19 +162,19 @@
           }
         ],
         "times": "1",
-        "service_start": "2025/3/31 12:00",
-        "service_end": "2025/4/3 18:59",
-        "disp_service_end": "4/3 18:59"
+        "service_start": "2025/4/30 12:00",
+        "service_end": "2025/5/3 18:59",
+        "disp_service_end": "5/3 18:59"
       }
     ],
-    "random_key": "394qjngi"
+    "random_key": "7j341f7j"
   },
   "event_info": [],
-  "appearance_gacha_id": "209431",
+  "appearance_gacha_id": "209571",
   "user_info": {
     "reward_to": 1,
-    "money": "346313365",
-    "user_money": "172237",
+    "money": "353277040",
+    "user_money": "202107",
     "requirement_money": 100,
     "available_times": 100,
     "limit_count": 100,
@@ -151,11 +190,11 @@
     {
       "ticket_id": "10021",
       "type": "legendticket",
-      "gacha_id": "209430",
+      "gacha_id": "209570",
       "campaign_id": "",
       "title": "Sレア以上確定ガチャチケット",
       "description": "Sレア以上が必ず当たる、特別なガチャチケットです。",
-      "count": "5",
+      "count": "7",
       "expired": false,
       "times": "1",
       "is_before_available": false,
@@ -177,6 +216,48 @@
       "is_choice_lineup": false
     },
     {
+      "ticket_id": "113071",
+      "type": "ticketonly",
+      "gacha_id": "113071",
+      "campaign_id": "",
+      "title": "2025年1月イベントSSレア確定ガチャ",
+      "description": "2025/1/22までに登場したSSレアが出現します。",
+      "count": "1",
+      "expired": false,
+      "times": "1",
+      "is_before_available": false,
+      "available_date": "",
+      "is_choice_lineup": false
+    },
+    {
+      "ticket_id": "113491",
+      "type": "ticketonly",
+      "gacha_id": "113491",
+      "campaign_id": "",
+      "title": "2025年4月キャラ武器確定ガチャ",
+      "description": "キャラ武器確定ガチャが引けるチケット！",
+      "count": "1",
+      "expired": false,
+      "times": "1",
+      "is_before_available": false,
+      "available_date": "",
+      "is_choice_lineup": false
+    },
+    {
+      "ticket_id": "113501",
+      "type": "ticketonly",
+      "gacha_id": "113501",
+      "campaign_id": "",
+      "title": "2025年4月召喚石確定ガチャ",
+      "description": "召喚石確定ガチャが引けるチケット！",
+      "count": "1",
+      "expired": false,
+      "times": "1",
+      "is_before_available": false,
+      "available_date": "",
+      "is_choice_lineup": false
+    },
+    {
       "ticket_id": "113521",
       "type": "ticketonly",
       "gacha_id": "113521",
@@ -184,6 +265,20 @@
       "title": "11th アニバーサリーガチャ",
       "description": "11th アニバーサリーガチャが引けるチケット！",
       "count": "9",
+      "expired": false,
+      "times": "1",
+      "is_before_available": false,
+      "available_date": "",
+      "is_choice_lineup": false
+    },
+    {
+      "ticket_id": "113681",
+      "type": "ticketonly",
+      "gacha_id": "113681",
+      "campaign_id": "",
+      "title": "2025年4月Sレア武器確定ガチャ",
+      "description": "Sレア武器確定ガチャが引けるチケット！",
+      "count": "10",
       "expired": false,
       "times": "1",
       "is_before_available": false,
@@ -208,11 +303,11 @@
   "ceiling": {
     "name": "蒼光の御印",
     "is_available": true,
-    "start": "2025/3/31 12:00",
-    "end": "2025/4/3 18:59",
-    "disp_end": "4/3 18:59",
+    "start": "2025/4/30 12:00",
+    "end": "2025/5/3 18:59",
+    "disp_end": "5/3 18:59",
     "can_exchange": false,
-    "use_count": 0
+    "use_count": "10"
   },
   "old_redceiling": [],
   "exchangeable_collaboration_ceiling": [],
@@ -273,12 +368,12 @@
   },
   "draw_starlegend_gacha_id": 0,
   "header_images": [
-    "1040714000",
-    "1040917900"
+    "1040028400",
+    "1040219900"
   ],
   "logo_image": "logo",
   "beginner300_remind_popup": null,
   "classic300_remind_popup": null,
   "anniversary300_remind_popup": [],
-  "gacha_token": "cc0457061fe84bbb"
+  "gacha_token": "87adb54325216907"
 }
